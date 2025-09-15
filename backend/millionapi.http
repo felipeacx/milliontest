@@ -1,0 +1,34 @@
+@millionapi_HostAddress = http://localhost:5215
+
+GET {{millionapi_HostAddress}}/api/properties
+Accept: application/json
+
+###
+
+GET {{millionapi_HostAddress}}/api/properties/health
+Accept: application/json
+
+###
+
+GET {{millionapi_HostAddress}}/api/properties/test
+Accept: application/json
+
+###
+
+POST {{millionapi_HostAddress}}/api/properties
+Content-Type: application/json
+
+{
+  "name": "Test Property",
+  "address": "123 Test Street",
+  "price": 300000,
+  "description": "A test property",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "squareFootage": 1000,
+  "propertyType": "Apartment",
+  "yearBuilt": 2020,
+  "ownerId": "1"
+}
+
+###

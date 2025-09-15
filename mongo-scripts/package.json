@@ -1,0 +1,26 @@
+{
+  "name": "mongo-setup-scripts",
+  "version": "1.0.0",
+  "description": "MongoDB setup and population scripts for technicaldb",
+  "main": "populate.js",
+  "scripts": {
+    "install-deps": "npm install",
+    "populate": "node populate.js",
+    "query": "node queries.js",
+    "setup": "npm run populate && npm run query",
+    "clear": "node clear-db.js",
+    "stats": "node stats.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "keywords": [
+    "mongodb",
+    "database",
+    "real-estate",
+    "properties"
+  ],
+  "author": "Million API Team",
+  "license": "MIT"
+}
